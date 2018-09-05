@@ -1,0 +1,82 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my fantastic app",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "no thank you",
+                        "no thanks",
+                        "no"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetFirstEventIntent",
+                    "slots": [
+                        {
+                            "name": "day",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "give me events for {day}",
+                        "{day}",
+                        "what happened",
+                        "what happened on {day}",
+                        "get events for {day}"
+                    ]
+                },
+                {
+                    "name": "GetNextEventIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes please",
+                        "sure",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "ConfusedIntent",
+                    "slots": [],
+                    "samples": [
+                        "this sucks",
+                        "go away",
+                        "I don't want",
+                        "How does it work",
+                        "That's silly"
+                    ]
+                },
+                {
+                    "name": "CanFulfillIntentRequest",
+                    "slots": [
+                        {
+                            "name": "day",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "I am curious what happened on {day}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
